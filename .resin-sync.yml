@@ -1,5 +1,5 @@
 local_resinos:
-  app-name: mraa-uart
+  app-name: rpi3-uart
   build-triggers:
     - Dockerfile: c18ed470543f178933b6a0e40945c7197a997ceb20be899447e49721ada84cf8
   environment: []

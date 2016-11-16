@@ -1,20 +1,5 @@
-// 'use strict';
-// var serialport = require('serialport');
-// var SerialPort = serialport.SerialPort;
-// var parsers = serialport.parsers;
-//
-// var port = new SerialPort('/dev/ttyAMA0', {
-//   baudrate: 9600,
-//   parser: parsers.readline('\r\n')
-// });
-//
-// port.on('open', function() {
-//   console.log('Port open');
-// });
-//
-// port.on('data', function(data) {
-//   console.log(data);
-// });
+// This example shows the use of UART0 with a loopback. To run this correctly, you
+// need to add a jumper wire between GPIO14 and GPIO15 on the RPI3.
 
 'use strict';
 
