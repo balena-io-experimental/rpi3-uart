@@ -1,0 +1,27 @@
+{
+  "name": "rpi3-uart",
+  "version": "1.0.0",
+  "description": "Testing the RPi3 UART",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resin-io-playground/rpi3-uart.git"
+  },
+  "keywords": [
+    "Raspberry",
+    "Pi",
+    "UART"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/resin-io-playground/rpi3-uart/issues"
+  },
+  "homepage": "https://github.com/resin-io-playground/rpi3-uart#readme",
+  "dependencies": {
+    "serialport": "^6.2.0"
+  }
+}

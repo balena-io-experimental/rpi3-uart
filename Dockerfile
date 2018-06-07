@@ -1,8 +1,10 @@
-FROM resin/raspberrypi3-node:4.6.1
+FROM resin/raspberrypi3-node:9
 
 WORKDIR /usr/src/app
 
-RUN npm install serialport
+COPY package*.json ./
+
+RUN npm install
 
 COPY . .
 

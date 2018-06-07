@@ -4,7 +4,9 @@
 'use strict';
 
 var SerialPort = require('serialport');
-var port = new SerialPort('/dev/ttyAMA0');
+var portName = process.env.SERIAL || '/dev/ttyAMA0';
+console.log(`Connecting to ${portName}`);
+var port = new SerialPort(portName);
 
 port.on('open', function() {
   var largeMessage = new Buffer(1024 * 10).fill('!');
@@ -24,5 +26,5 @@ port.on('open', function() {
 });
 
 port.on('data', function(data) {
-  console.log('Received: \t', data);
+  console.log('Received: \t', data.toString());
 });
