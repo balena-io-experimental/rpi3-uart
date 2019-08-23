@@ -1,4 +1,4 @@
-FROM resin/raspberrypi3-node:9
+FROM balenalib/raspberrypi3-node:12-build
 
 WORKDIR /usr/src/app
 
@@ -8,6 +8,4 @@ RUN npm install
 
 COPY . .
 
-CMD node main.js
-
-ENV INITSYSTEM=on
+CMD ["node", "main.js"]

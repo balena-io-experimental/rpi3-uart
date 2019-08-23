@@ -9,7 +9,7 @@ console.log(`Connecting to ${portName}`);
 var port = new SerialPort(portName);
 
 port.on('open', function() {
-  var largeMessage = new Buffer(1024 * 10).fill('!');
+  var largeMessage = Buffer.alloc(1024 * 10).fill('!');
   console.log('Calling write');
   port.write(largeMessage, function() {
     console.log('Write callback returned');

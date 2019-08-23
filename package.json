@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/resin-io-playground/rpi3-uart#readme",
   "dependencies": {
-    "serialport": "^6.2.0"
+    "serialport": "^7.1.5"
   }
 }
